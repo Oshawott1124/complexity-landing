@@ -1,6 +1,9 @@
 {
   "version": 2,
   "name": "complexity-ai",
+  "author": "Complexity AI",
+  "authorEmail": "info@complexity-ai.com",
+  "authorUrl": "https://www.complexity-ai.com",
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
