@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Form handling
     const contactForm = document.querySelector('.form');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             
             // Get form data
@@ -112,23 +112,38 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
             submitBtn.disabled = true;
             
-            // Simulate API call
-            setTimeout(() => {
-                submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-                submitBtn.style.background = 'var(--success-color)';
-                
-                showNotification('Thank you for your interest! We\'ll get back to you soon.', 'success');
-                
-                // Reset form
-                this.reset();
-                
-                // Reset button after 3 seconds
+            // Send form data to Vercel Serverless Function
+            try {
+                const response = await fetch('/api/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ name, email, interest, message }),
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+                    submitBtn.style.background = 'var(--success-color)';
+                    showNotification(result.message, 'success');
+                    this.reset();
+                } else {
+                    throw new Error(result.error || 'Unknown error occurred');
+                }
+            } catch (error) {
+                console.error('Form submission error:', error);
+                showNotification(`Failed to send message: ${error.message}`, 'error');
+                submitBtn.style.background = 'var(--warning-color)'; // Indicate failure
+            } finally {
+                // Reset button after 3 seconds, regardless of success or failure
                 setTimeout(() => {
                     submitBtn.innerHTML = originalText;
                     submitBtn.disabled = false;
-                    submitBtn.style.background = '';
+                    submitBtn.style.background = ''; // Clear custom background
                 }, 3000);
-            }, 2000);
+            }
         });
     }
     

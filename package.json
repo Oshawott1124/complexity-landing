@@ -1,0 +1,24 @@
+{
+  "name": "complexity-landing",
+  "version": "1.0.0",
+  "description": "A modern, Notion-inspired landing page for Complexity AI - a startup focused on automating laboratory workflows through AI and data collection.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oshawott1124/complexity-landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Oshawott1124/complexity-landing/issues"
+  },
+  "homepage": "https://github.com/Oshawott1124/complexity-landing#readme",
+  "dependencies": {
+    "nodemailer": "^7.0.5"
+  }
+}
