@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complexity AI - Automating Lab Intelligence</title>
+    <title>Datalox — Glass Box AI Workflows Platform</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -16,15 +16,17 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <i class="fas fa-cube"></i>
-                <span>Complexity AI</span>
+                <span>Datalox</span>
             </div>
             <div class="nav-menu">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#vision" class="nav-link">Vision</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#advantages" class="nav-link">Advantages</a>
+                <a href="#vision" class="nav-link">Future Vision</a>
+                <a href="#platform" class="nav-link">Platform</a>
                 <a href="#contact" class="nav-link">Contact</a>
-                <a href="https://app.cvat.ai/auth/login" target="_blank" class="contribution-btn">
-                    <i class="fas fa-plus"></i>
-                    Contribute
+                <a href="mailto:contact@complexity-ai.com" class="contribution-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Request Demo
                 </a>
             </div>
         </div>
@@ -35,83 +37,109 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-badge">
-                    <span>🔬 Real Workflows, Real Data</span>
+                    <span> AI Workflows Platform </span>
                 </div>
                 <h1 class="hero-title">
-                    Capturing Actual
-                    <span class="gradient-text">Workflow Intelligence</span>
+                    Turn every agent run into a transparent, human-editable notebook.
                 </h1>
                 <p class="hero-description">
-                    We generate high-signal training data by capturing actual workflows — not hypothetical edge cases. 
-                    Instead of artificial prompts, we observe real-world tasks, test where current models fail, and capture meaningful gaps.
+                   Datalox's co-pilot replaces opaque automation with collaborative notebooks. Plans compile into cells, tool calls stream live, and experts edit the workflow before execution touches real instruments.
                 </p>
+                <div class="hero-highlights">
+                    <div class="highlight-pill"><i class="fas fa-diagram-project"></i> Structured plan graph</div>
+                    <div class="highlight-pill"><i class="fas fa-terminal"></i> Executable code & API calls</div>
+                    <div class="highlight-pill"><i class="fas fa-user-edit"></i> Human-in-the-loop edits</div>
+                </div>
                 <div class="hero-buttons">
-                    <a href="https://app.cvat.ai/auth/login" target="_blank" class="btn btn-primary">
-                        <i class="fas fa-plus"></i>
-                        Start Contributing
+                    <a href="#platform" class="btn btn-primary">
+                        <i class="fas fa-layer-group"></i>
+                        Explore the Platform
                     </a>
-                    <a href="#about" class="btn btn-secondary">
-                        <i class="fas fa-info-circle"></i>
-                        Learn More
+                    <a href="#how-it-works" class="btn btn-secondary">
+                        <i class="fas fa-glasses"></i>
+                        See the Glass Box
                     </a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="floating-card card-1">
-                    <i class="fas fa-eye"></i>
-                    <span>Workflow Observation</span>
+                    <i class="fas fa-clipboard-list"></i>
+                    <span>Notebook Cells</span>
                 </div>
                 <div class="floating-card card-2">
-                    <i class="fas fa-search"></i>
-                    <span>Gap Analysis</span>
+                    <i class="fas fa-plug"></i>
+                    <span>Tool Invocations</span>
                 </div>
                 <div class="floating-card card-3">
-                    <i class="fas fa-bullseye"></i>
-                    <span>Real-World Data</span>
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Inline Outputs</span>
                 </div>
                 <div class="floating-card card-4">
-                    <i class="fas fa-sync"></i>
-                    <span>Iterative Learning</span>
+                    <i class="fas fa-people-arrows"></i>
+                    <span>Human Oversight</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
         <div class="container">
             <div class="section-header">
-                <h2>Our Approach</h2>
-                <p>Unlike traditional data labeling companies, we capture meaningful training data from real-world workflows</p>
+                <h2>How It Works: From Black Box to Glass Box</h2>
+                <p>An agent run decomposes into a living notebook. Every decision becomes an editable cell before execution hits real-world systems.</p>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Workflow Observation</h3>
-                    <p>We observe actual daily workflows in real laboratory environments, capturing authentic task sequences and decision points.</p>
+            <div class="how-grid">
+                <div class="how-card old-way">
+                    <h3>The Old Way (Rigid UI)</h3>
+                    <p>Users send a command, brace for the final output, and hope the hidden chain-of-thought did the right thing.</p>
+                    <ul class="how-list">
+                        <li>Opaque reasoning and tool usage locked inside vendor UIs.</li>
+                        <li>No opportunity to tweak parameters or reorder steps mid-run.</li>
+                        <li>Debugging means retrying from scratch with different prompts.</li>
+                    </ul>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-search"></i>
+                <div class="how-card new-way">
+                    <h3>Your Way (Interactive Notebook)</h3>
+                    <p>The co-pilot emits an annotated plan as notebook cells. You can inspect, edit, or insert new logic before executing downstream actions.</p>
+                    <ul class="how-list">
+                        <li>Plans compile into modular cells you can pause, reroute, or parameterize.</li>
+                        <li>Each cell captures provenance: prompts, tool configs, outputs, and evaluator feedback.</li>
+                        <li>Humans collaborate with the agent by editing cells inline or attaching new ones.</li>
+                    </ul>
+                    <div class="cell-pills">
+                        <span class="cell-pill"><i class="fas fa-code"></i> Code cell</span>
+                        <span class="cell-pill"><i class="fas fa-plug"></i> API call</span>
+                        <span class="cell-pill"><i class="fas fa-chart-area"></i> Data viz</span>
+                        <span class="cell-pill"><i class="fas fa-comment-dots"></i> NL summary</span>
                     </div>
-                    <h3>Model Gap Analysis</h3>
-                    <p>We test where current AI models fail on real tasks, identifying meaningful gaps rather than artificial edge cases.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3>High-Signal Data</h3>
-                    <p>Every data point comes from actual workflow breakdowns, ensuring training data that matters for real-world applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="advantages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Advantages</h2>
+                <p>Why glass-box workflows matter for scientific and industrial teams.</p>
+            </div>
+            <div class="advantage-grid">
+                <div class="advantage-card">
+                    <span class="adv-number">01</span>
+                    <h3>Transparency &amp; Trust</h3>
+                    <p>Inspect the agent's entire reasoning chain. When something fails, pinpoint the cell, adjust it, and rerun without guesswork.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Iterative Improvement</h3>
-                    <p>Continuous workflow observation and model testing creates a feedback loop for increasingly sophisticated AI systems.</p>
+                <div class="advantage-card">
+                    <span class="adv-number">02</span>
+                    <h3>Interactivity &amp; Control</h3>
+                    <p>Teams collaborate with the agent in real time. Edit parameters, branch into exploratory cells, or hand off execution where human judgment matters.</p>
+                </div>
+                <div class="advantage-card">
+                    <span class="adv-number">03</span>
+                    <h3>Flexibility</h3>
+                    <p>Notebook cells are inherently modular. Compose complex, multi-step workflows without fighting a rigid wizard or linear UI.</p>
                 </div>
             </div>
         </div>
@@ -122,35 +150,35 @@
         <div class="container">
             <div class="vision-content">
                 <div class="vision-text">
-                    <h2>Our Vision</h2>
-                    <p class="vision-subtitle">Workflow-First AI Training</p>
+                    <h2>The Future Vision: AI-Generated Workflows</h2>
+                    <p class="vision-subtitle">From natural language objectives to executable notebooks.</p>
                     <div class="vision-points">
                         <div class="vision-point">
                             <div class="point-number">01</div>
                             <div class="point-content">
-                                <h4>Workflow Capture</h4>
-                                <p>Embed within laboratory operations to capture authentic workflows, not artificial scenarios created in isolation.</p>
+                                <h4>Capture the Mission</h4>
+                                <p>A scientist outlines the high-level goal with context, constraints, and success criteria established up front.</p>
                             </div>
                         </div>
                         <div class="vision-point">
                             <div class="point-number">02</div>
                             <div class="point-content">
-                                <h4>Real-World Testing</h4>
-                                <p>Test current AI models against actual laboratory tasks to identify genuine capability gaps and failure modes.</p>
+                                <h4>Plan as Notebook</h4>
+                                <p>The platform decomposes objectives into a pre-populated notebook with the right code blocks, tool adapters, data tables, and validation cells.</p>
                             </div>
                         </div>
                         <div class="vision-point">
                             <div class="point-number">03</div>
                             <div class="point-content">
-                                <h4>Meaningful Data Generation</h4>
-                                <p>Generate training data from observed failures and workflow breakdowns, ensuring every sample addresses real problems.</p>
+                                <h4>Human Review</h4>
+                                <p>Users review, approve, or modify the proposed workflow before execution, ensuring compliance, safety, and scientific intent.</p>
                             </div>
                         </div>
                         <div class="vision-point">
                             <div class="point-number">04</div>
                             <div class="point-content">
-                                <h4>Continuous Workflow Intelligence</h4>
-                                <p>Build AI systems that understand actual laboratory operations through continuous observation and iterative improvement.</p>
+                                <h4>Observable Execution</h4>
+                                <p>Execution streams through the notebook with evaluators, metrics, and logs attached to each cell. Every run becomes high-signal training data.</p>
                             </div>
                         </div>
                     </div>
@@ -160,29 +188,29 @@
                         <div class="timeline-item active">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <h5>2025 - Workflow Observation</h5>
-                                <p>Embed in laboratories to capture real daily workflows</p>
+                                <h5>Objective Intake</h5>
+                                <p>Capture goals, constraints, and required instruments.</p>
                             </div>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <h5>Model Testing</h5>
-                                <p>Test current AI models against observed workflows</p>
+                                <h5>Notebook Compilation</h5>
+                                <p>Planner expands the mission into typed notebook cells.</p>
                             </div>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <h5>Gap-Based Training Data</h5>
-                                <p>Generate training data from identified model failures</p>
+                                <h5>Review &amp; Approval</h5>
+                                <p>Stakeholders inspect, edit, and annotate the workflow.</p>
                             </div>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <h5>Workflow-Aware AI</h5>
-                                <p>Deploy AI systems trained on real workflow patterns</p>
+                                <h5>Traceable Execution</h5>
+                                <p>Run cells with instrumentation, evaluators, and exports.</p>
                             </div>
                         </div>
                     </div>
@@ -191,46 +219,76 @@
         </div>
     </section>
 
-    <!-- Contribution Section -->
-    <section class="contribution">
+    <!-- Platform Section -->
+    <section id="platform" class="architecture">
         <div class="container">
-            <div class="contribution-card">
-                <div class="contribution-content">
-                    <h2>Join Our Workflow Research</h2>
-                    <p>Help us capture authentic laboratory workflows and identify where current AI models fail. Your contributions create training data that addresses real-world problems, not artificial scenarios.</p>
-                    <div class="contribution-features">
-                        <div class="contrib-feature">
-                            <i class="fas fa-microscope"></i>
-                            <span>Workflow Documentation</span>
-                        </div>
-                        <div class="contrib-feature">
-                            <i class="fas fa-bug"></i>
-                            <span>Model Failure Analysis</span>
-                        </div>
-                        <div class="contrib-feature">
-                            <i class="fas fa-users"></i>
-                            <span>Real-World Impact</span>
-                        </div>
-                    </div>
-                    <a href="https://app.cvat.ai/auth/login" target="_blank" class="btn btn-primary btn-large">
-                        <i class="fas fa-external-link-alt"></i>
-                        Start Contributing Now
-                    </a>
+            <div class="section-header">
+                <h2>Platform Capabilities</h2>
+                <p>Datalox delivers glass-box workflows that teams can trust, extend, and govern without exposing sensitive operations.</p>
+            </div>
+            <div class="tl-grid">
+                <div class="tl-card">
+                    <h3>Transparent Notebooks</h3>
+                    <p>Every agent run renders as an interactive notebook so subject matter experts can review, annotate, and approve each step.</p>
                 </div>
-                <div class="contribution-visual">
-                    <div class="annotation-preview">
-                        <div class="annotation-item">
-                            <div class="annotation-box"></div>
-                            <span>Workflow Sequences</span>
-                        </div>
-                        <div class="annotation-item">
-                            <div class="annotation-box"></div>
-                            <span>Decision Points</span>
-                        </div>
-                        <div class="annotation-item">
-                            <div class="annotation-box"></div>
-                            <span>Failure Modes</span>
-                        </div>
+                <div class="tl-card">
+                    <h3>Collaborative Control</h3>
+                    <p>Humans stay in the loop with checkpoints, guardrails, and the ability to pause or edit cells before anything executes.</p>
+                </div>
+                <div class="tl-card">
+                    <h3>Integrated Tools</h3>
+                    <p>Blend models, APIs, lab instruments, and analytics blocks without rebuilding workflows from scratch.</p>
+                </div>
+                <div class="tl-card">
+                    <h3>Governed Execution</h3>
+                    <p>Capture context, approvals, and outcomes so every run is auditable, repeatable, and ready for compliance review.</p>
+                </div>
+            </div>
+            <div class="architecture-panels">
+                <div class="architecture-panel">
+                    <h3>Observability by Design</h3>
+                    <ul class="arc-list">
+                        <li>Notebook history, comments, and approvals stay attached to each execution step.</li>
+                        <li>Structured logs and metrics make it easy to investigate, learn, and improve.</li>
+                        <li>Export curated traces to accelerate downstream training and analytics.</li>
+                    </ul>
+                </div>
+                <div class="architecture-panel">
+                    <h3>Composable Building Blocks</h3>
+                    <ul class="arc-list">
+                        <li>Mix and match agent skills, data sources, and reporting widgets.</li>
+                        <li>Reuse proven notebook cells across projects and teams.</li>
+                        <li>Connect to existing systems with lightweight adapters.</li>
+                    </ul>
+                </div>
+                <div class="architecture-panel">
+                    <h3>Ready for Real Teams</h3>
+                    <ul class="arc-list">
+                        <li>Embed domain experts through collaborative reviews and controlled automation.</li>
+                        <li>Roll out guardrails that reflect safety, quality, and regulatory policies.</li>
+                        <li>Scale from prototypes to production workflows with confidence.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-vision">
+                <h3>Built for High-Stakes Work</h3>
+                <p>A unified workspace where teams design protocols, orchestrate agents, and capture institutional knowledge in one place.</p>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <h4>Who We Serve</h4>
+                        <ul>
+                            <li><strong>Practitioners:</strong> need transparent runs they can adapt on the fly.</li>
+                            <li><strong>Data &amp; AI leads:</strong> expect governed, reproducible workflows.</li>
+                            <li><strong>Operations owners:</strong> require oversight, audit trails, and trust.</li>
+                        </ul>
+                    </div>
+                    <div class="product-card">
+                        <h4>Why It Matters</h4>
+                        <ul>
+                            <li>Design and run complex workflows without losing transparency.</li>
+                            <li>Blend automation with expert judgment while staying compliant.</li>
+                            <li>Capture the learnings from every run to train the next generation of agents.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -243,7 +301,7 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h2>Let's Connect</h2>
-                    <p>Interested in partnering with us or learning more about our mission? We'd love to hear from you.</p>
+                    <p>Ready to pilot a glass-box agent in your lab or digital ops? Request a walkthrough of the Modular AI Lab Co-Pilot.</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
@@ -256,7 +314,7 @@
                             <i class="fas fa-building"></i>
                             <div>
                                 <h4>Company</h4>
-                                <p>Complexity AI</p>
+                                <p>Complexity LLC</p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -305,26 +363,26 @@
                 <div class="footer-brand">
                     <div class="footer-logo">
                         <i class="fas fa-cube"></i>
-                        <span>Complexity AI</span>
+                        <span>Complexity LLC</span>
                     </div>
-                    <p>Building the future of laboratory intelligence through AI and automation.</p>
+                    <p>Building glass-box AI workflows so scientists can observe, edit, and trust every run.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-section">
                         <h4>Company</h4>
-                        <a href="#about">About</a>
+                        <a href="#how-it-works">How It Works</a>
                         <a href="#vision">Vision</a>
                         <a href="#contact">Contact</a>
                     </div>
                     <div class="footer-section">
-                        <h4>Contribute</h4>
-                        <a href="https://app.cvat.ai/auth/login" target="_blank">CVAT Platform</a>
-                        <a href="#contact">Partnership</a>
+                        <h4>Get Involved</h4>
+                        <a href="#platform">Platform</a>
+                        <a href="#contact">Request Demo</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Complexity AI. All rights reserved.</p>
+                <p>&copy; 2025 Complexity LLC. All rights reserved.</p>
             </div>
         </div>
     </footer>
